@@ -1,0 +1,174 @@
+body{
+    min-height: 100vh;
+    background: hsl(210, 46%, 95%);
+    font-family: Manrope;
+    font-size: 13px;
+    color: hsl(212, 23%, 69%);
+    margin: 0;
+}
+h1{
+    font-weight: 700;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    min-width: 600px;
+    
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(49, 29, 29, 0.219);
+}
+.img{
+    width: 300px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 10px 0 0 10px;
+}
+.img img{
+    
+    width: 400px;
+    
+    height: 100%;
+}
+.texto{
+    width: 400px;
+    /* background-color: rgb(255, 255, 255) */;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+}
+.profile{
+    display:flex;
+    
+    align-items: center;
+    justify-content: baseline;
+    width: 100%;
+    position: relative;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    float: left;
+    
+}
+
+.profile div p{
+    margin-left: 10px;
+    
+}
+
+.name{
+    font-weight: 700;
+}
+.share{
+    position:absolute;
+    
+    
+    right: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background:  hsl(210, 46%, 95%);
+    color: hsl(214, 17%, 51%);
+}
+.share:hover, .active{
+    background:  hsl(212, 23%, 69%);
+    color: white;
+}
+.redes{
+    position: absolute;
+    right: -60px;
+    top: -30px;
+    background: hsl(217, 19%, 35%);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 0;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+.show{
+    max-height: 100px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.redes i:hover{
+    opacity: .7;
+}
+h2, strong{
+    color: hsl(217, 19%, 35%);
+}
+@media(max-width:800px)
+{
+    .card{
+        flex-direction: column;
+        align-items: center;
+        min-width: 0px;
+        width: 80%;
+        height: auto;
+    }
+    .img{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .img img{
+        width: 100%;
+    }
+    .texto{
+        
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+       
+    }
+    .texto p,.texto h2{
+        width: 90%;
+    }
+    .share{
+        z-index: 3;
+        right: 10px;
+    }
+    .redes{
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        justify-content:center;
+        z-index: 1;
+        border-radius: 0 0 10px 10px;
+        font-size: 20px;
+    }
+    .profile img{
+        margin-left: 10px;
+    }
+    
+}
