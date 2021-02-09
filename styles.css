@@ -1,7 +1,7 @@
 body{
     min-height: 100vh;
     background: hsl(210, 46%, 95%);
-    font-family: Manrope;
+    font-family: Manrope,sans-serif;
     font-size: 13px;
     color: hsl(212, 23%, 69%);
     margin: 0;
